@@ -34,7 +34,7 @@ public class TimeEntryController {
     @DeleteMapping(path="/time-entries/{timeEntryId}")
     public @ResponseBody
     ResponseEntity delete(@PathVariable long timeEntryId) {
-        boolean result = timeEntryRepository.delete(timeEntryId);
+        timeEntryRepository.delete(timeEntryId);
         return  ResponseEntity.noContent().build();
     }
 

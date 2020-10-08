@@ -27,8 +27,8 @@ public class InMemoryTimeEntryRepository implements  TimeEntryRepository {
         } return null;
     }
 
-    public boolean delete(long id) {
-        return repos.remove(id) != null;
+    public void delete(long id) {
+        repos.remove(id) ;
     }
 
     public List<TimeEntry> list() {

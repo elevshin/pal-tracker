@@ -11,6 +11,6 @@ public interface TimeEntryRepository {
 
     public TimeEntry find(long timeEntryId);
 
-    public boolean delete(long timeEntryId);
+    public void delete(long timeEntryId);
 }
 
